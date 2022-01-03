@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Movies</title>
+	</head>
+	<body>
+		<h1>Best movies of 2021</h1 >
+		<ol>
+			<li th:each="movie : ${movies}" th:text="${movie}"></li >
+		</ol>
+		<div>
+			<ul>
+				<li>
+					<a th:href="@{'/'}" th:text="Home"></a >
+				</li>				
+			</ul>
+		</div>				
+	</body>
+</html>
